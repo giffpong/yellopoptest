@@ -1,0 +1,18 @@
+.nav-link {
+  color: white;
+}
+
+.logo {
+  margin-left: 180px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.logo-profile {
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 180px;
+}
