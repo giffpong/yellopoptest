@@ -1,5 +1,5 @@
 .profile-detail {
-  height: 500px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -21,4 +21,14 @@
 .profile-detail-menu a {
   width: 200px;
   cursor: pointer;
+}
+
+.profile-detail-home {
+  width: 100%;
+  color: white;
+}
+
+.profile-detail-about {
+  width: 100%;
+  color: white;
 }

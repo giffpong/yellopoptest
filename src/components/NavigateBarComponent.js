@@ -3,7 +3,7 @@ import '../styles/NavigateBarComponent.css';
 
 function NavigateBarComponent() {
   return (
-    <div>
+    <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light">
         <input
           className="logo"

@@ -1,0 +1,72 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header {
+  text-align: left;
+}
+
+.input-group-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-group-column {
+  width: 300px;
+  background-color: #1c2733;
+  padding: 5px;
+}
+
+.input-group-column input {
+  border: 0px;
+}
+
+.input-group-column input:focus,
+input:enabled {
+  color: white;
+  background-color: #1c2733;
+}
+
+.input-left {
+  width: 100%;
+  margin-right: 5px;
+}
+
+.input-right {
+  width: 100%;
+  margin-left: 5px;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #b2b2b2;
+  font-size: 12px;
+}
+
+.input-label-header {
+  width: 100%;
+  text-align: left;
+  margin-left: 12px;
+}
+
+.input-label-tailer {
+  width: 100%;
+  text-align: right;
+  margin-right: 12px;
+}
+
+.input-group-column select {
+  color: white;
+  background-color: #1c2733;
+  border: 0px;
+}
