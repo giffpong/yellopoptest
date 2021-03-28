@@ -2,10 +2,6 @@ import React from 'react';
 import '../styles/UploadResultComponent.css';
 
 function UploadResultComponent(props) {
-  console.log(
-    '🚀 ~ file: UploadResultComponent.js ~ line 8 ~ UploadResultComponent ~ props.name',
-    props.name
-  );
   return (
     <div className="container upload-result">
       <div className="card" style={{ width: '18rem' }}>

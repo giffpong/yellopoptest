@@ -24,8 +24,9 @@
 
 .card-body {
   color: white;
-  background-color: #1c2733;
+  background-color: #132233;
   text-align: left;
+  padding: 1.25rem 0rem;
 }
 
 .card-text-footer {

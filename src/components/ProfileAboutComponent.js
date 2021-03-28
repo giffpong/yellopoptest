@@ -1,32 +1,20 @@
 import React, { useState } from 'react';
 import '../styles/ProfileAboutComponent.css';
-import { Form } from 'react-bootstrap';
-import moment from 'moment-timezone';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
-const TIMEZONE = 'Asia/Bangkok';
-const DATE_FORMAT = 'DD MMMM YYYY';
-// const DATE_FORMAT = 'DD MMMM YYYY';
 const SEXUAL = ['Choose...', 'Female', 'Male'];
 
 function ProfileAboutComponent() {
-  // const [dateSelected, setDateSelected] = useState(
-  //   moment().tz(TIMEZONE).format(DATE_FORMAT)
-  // );
   const [name, setName] = useState('Herman Proce');
   const [tagline, setTagline] = useState('@Tagline');
   const [sex, setSex] = useState(1);
-  const [dateSelected, setDateSelected] = useState('1991-09-10');
+  const [dateSelected, setDateSelected] = useState(new Date(1991, 8, 10));
 
   const handleChangeName = (event) => setName(event.target.value);
   const handleChangeTagline = (event) => setTagline(event.target.value);
   const handleChangeSex = (event) => setSex(event.target.value);
-  const handleChangeDate = (event) => {
-    console.log(
-      '🚀 ~ file: ProfileAboutComponent.js ~ line 26 ~ handleChangeDate ~ moment(event.target.value).tz(TIMEZONE).format(DATE_FORMAT)',
-      moment(event.target.value).tz(TIMEZONE).format(DATE_FORMAT)
-    );
-    setDateSelected(event.target.value);
-  };
+
   return (
     <div className="container about">
       <div className="header">
@@ -101,14 +89,21 @@ function ProfileAboutComponent() {
           {/* <Form.Group controlId="dob">
             <Form.Control type="date" name="dob" placeholder="Date of Birth" />
           </Form.Group> */}
-          <input
+          {/* <input
             type="date"
             className="input-group-field"
             name="birthdate"
             id="birthdate"
             value={dateSelected}
             onChange={handleChangeDate}
-          />
+          /> */}
+          <div className="input-date-picker">
+            <DatePicker
+              selected={dateSelected}
+              onChange={(date) => setDateSelected(date)}
+              dateFormat="dd MMMM yyyy"
+            />
+          </div>
         </div>
       </div>
     </div>

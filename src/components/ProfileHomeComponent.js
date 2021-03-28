@@ -12,10 +12,6 @@ function ProfileHomeComponent() {
   };
   const handleChange = (event) => {
     const filesUploaded = event.target.files;
-    console.log(
-      '🚀 ~ file: ProfileHomeComponent.js ~ line 15 ~ handleChange ~ filesUploaded',
-      filesUploaded
-    );
     const results = [...selectedFiles];
     results.push(...filesUploaded);
     setSelectedFiles(results);
@@ -25,10 +21,6 @@ function ProfileHomeComponent() {
     const results = [];
     for (let index = 0; index < selectedFiles.length; index++) {
       const element = selectedFiles[index];
-      console.log(
-        '🚀 ~ file: ProfileHomeComponent.js ~ line 28 ~ generateDetail ~ element',
-        element
-      );
       results.push(
         <UploadResultComponent
           key={index}
