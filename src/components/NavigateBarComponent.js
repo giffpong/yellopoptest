@@ -6,7 +6,6 @@ function NavigateBarComponent() {
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light">
         <input
-          className="logo"
           type="image"
           src="./pillowcast.png"
           alt="Submit"

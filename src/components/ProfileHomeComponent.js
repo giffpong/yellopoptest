@@ -31,7 +31,7 @@ function ProfileHomeComponent() {
     return results;
   };
   return (
-    <div className="container home">
+    <div className="container">
       <div style={{ display: selectedFiles.length === 0 ? '' : 'none' }}>
         <img className="logo-upload" src="./upload-logo.png" alt="Avatar" />
         <br />
